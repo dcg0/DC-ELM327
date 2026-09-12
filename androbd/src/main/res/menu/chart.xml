@@ -13,4 +13,10 @@
         android:title="@string/share"
         android:showAsAction="ifRoom"
         android:icon="@android:drawable/ic_menu_share"/>
+
+    <item
+        android:id="@+id/action_dashboard"
+        android:title="Tablero DC"
+        android:showAsAction="always" />
+
 </menu>
