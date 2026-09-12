@@ -34,8 +34,8 @@ Plugin extension support
 ------------------------
 * Avalilable Plugins:
   * MqttPublisher - Publish OBD readings to MQTT broker for home automation
-  * GpsProvider - Provide GPS data to AndrOBD
-  * SensorProvider - Provide Accelerometer sensor data to AndrOBD
+  * GpsProvider - Provide GPS data to DC-ELM327
+  * SensorProvider - Provide Accelerometer sensor data to DC-ELM327
 
 Native language support
 -----------------------

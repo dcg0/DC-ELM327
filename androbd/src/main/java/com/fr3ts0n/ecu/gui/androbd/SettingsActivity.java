@@ -162,7 +162,6 @@ public class SettingsActivity
 		setupPidSelection();
 		// update network selection fields
 		updateNetworkSelections();
-		findPreference(KEY_BITCOIN).setOnPreferenceClickListener(this);
 		// add handler for selection update
 		prefs.registerOnSharedPreferenceChangeListener(this);
 	}
