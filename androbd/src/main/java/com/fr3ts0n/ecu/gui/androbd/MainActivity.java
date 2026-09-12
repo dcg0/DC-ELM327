@@ -549,7 +549,16 @@ public class MainActivity extends PluginManager
         setNightMode(prefs.getBoolean(NIGHT_MODE, false));
 
         // instantiate superclass
+        
         super.onCreate(savedInstanceState);
+        // Enlace seguro al botón del tablero
+        android.view.View btnDashboard = findViewById(getResources().getIdentifier("btnOpenDashboard", "id", getPackageName()));
+        if (btnDashboard != null) {
+            btnDashboard.setOnClickListener(v -> {
+                startActivity(new android.content.Intent(this, org.cz.android.androbd.ui.DashboardActivity.class));
+            });
+        }
+        
 
         dlgBuilder = new AlertDialog.Builder(this);
 
