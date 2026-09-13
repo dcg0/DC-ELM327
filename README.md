@@ -3,7 +3,7 @@
 
 # 🚗 DC-ELM327
 
-[![Get it on F-Droid](https://f-droid.org/badge/get-it-on.png)](https://f-droid.org/packages/com.fr3ts0n.ecu.gui.androbd/)
+[![Get it on F-Droid](https://f-droid.org/badge/get-it-on.png)](https://f-droid.org/packages/com.fr3ts0n.ecu.gui.com/)
 [![License](https://img.shields.io/badge/license-GPLv3-blue.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Android-green.svg)](https://www.android.com)
 
