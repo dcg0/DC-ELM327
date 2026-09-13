@@ -5,7 +5,7 @@
 
 [![Get it on F-Droid](https://f-droid.org/badge/get-it-on.png)](https://f-droid.org/packages/com.fr3ts0n.ecu.gui.com/)
 [![License](https://img.shields.io/badge/license-GPLv3-blue.svg)](LICENSE)
-[![Platform](https://img.shields.io/badge/platform-Android-green.svg)](https://www.android.com)
+[![Platform](https://img.shields.io/badge/platform-Android-green.svg)](https://www.com)
 
 **DC-ELM327** es una potente aplicación de diagnóstico vehicular OBD2 para dispositivos Android. Conéctate a la computadora de tu auto en tiempo real, lee y borra códigos de falla, y monitorea cada detalle del rendimiento de tu motor de manera fácil y profesional.
 
