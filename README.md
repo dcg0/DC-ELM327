@@ -1,206 +1,177 @@
-![AndrOBD](fastlane/metadata/android/en-US/images/tvBanner.png)
+# HC-ELM327 / DCarECU
 
-AndrOBD allows your Android device to connect to your car's on-board diagnostics system via any ELM327 compatible OBD adapter, display various information & perform operations.
-It is open source and completely free. The application also has a built in Demo mode that simulates live data, so you don't require an adapter to test it.
+![HC-ELM327](hc-elm327.png)
+# 🚗 DC-ELM327
 
-![Android CI](https://github.com/fr3ts0n/AndrOBD/actions/workflows/android.yml/badge.svg)
-[![GitHub issues](https://img.shields.io/github/issues/fr3ts0n/AndrOBD?color=red)](https://github.com/fr3ts0n/AndrOBD/issues)
-[![Liberapay receiving](https://img.shields.io/liberapay/receives/AndrOBD?label=Liberapay)](https://liberapay.com/AndrOBD/donate/)
-[![Subreddit subscribers](https://img.shields.io/reddit/subreddit-subscribers/AndrOBD?color=orange)](https://www.reddit.com/r/AndrOBD/)
-[![Telegram](https://img.shields.io/badge/chat-on%20Telegram-blue)](https://t.me/joinchat/G60ltQv5CCEQ94BZ5yWQbg)
-[![Matrix](https://img.shields.io/badge/Chat-on%20Matrix-blue)](https://matrix.to/#/#AndrOBD:matrix.org)
-[![GitHub license](https://img.shields.io/github/license/fr3ts0n/AndrOBD?color=lightgrey)](https://github.com/fr3ts0n/AndrOBD/blob/master/LICENSE)
+<p align="center">
+  <img src="https://github.com/dcg0/DC-ELM327/raw/refs/heads/main/readme.png" alt="DC-ELM327" width="100%">
+</p>
 
-## Documentation
+<h2 align="center">Sistema de diagnóstico automotriz OBD-II</h2>
 
-* [FAQ](https://github.com/fr3ts0n/AndrOBD/wiki/Frequently-asked-questions) - Frequently asked questions
+<p align="center">
+  Diagnóstico y monitoreo de parámetros del vehículo mediante un módulo <b>ELM327</b>.
+</p>
 
-* [Wiki](https://github.com/fr3ts0n/AndrOBD/wiki) - AndrOBD knowledge database
+---
 
-## Install
+## 📋 Descripción
 
-[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/fr3ts0n/AndrOBD?label=latest%20version&sort=semver)](https://github.com/fr3ts0n/AndrOBD/releases)
-[![F-Droid](https://img.shields.io/f-droid/v/com.fr3ts0n.ecu.gui.androbd)](https://f-droid.org/en/packages/com.fr3ts0n.ecu.gui.androbd/)
-[![Telegram](https://img.shields.io/badge/alpha/beta-on%20Telegram-blue)](https://t.me/AndrOBD_dev)
+**DC-ELM327** es una aplicación orientada al diagnóstico y monitoreo automotriz utilizando el protocolo **OBD-II** y módulos compatibles con **ELM327**.
+
+La aplicación permite establecer comunicación con la ECU del vehículo y visualizar información del automóvil mediante una interfaz tipo tablero.
+
+---
+
+## 🔧 Características
+
+- Conexión con módulos **ELM327**.
+- Comunicación mediante **OBD-II**.
+- Lectura de parámetros de la ECU.
+- Monitoreo de datos en tiempo real.
+- Visualización de RPM.
+- Velocidad del vehículo.
+- Temperatura del motor.
+- Nivel de combustible.
+- Lectura de información de diagnóstico.
+- Interfaz gráfica tipo tablero automotriz.
+- Diseño orientado al diagnóstico y monitoreo.
+
+---
+
+## 📡 Comunicación
+
+DC-ELM327 está diseñado para trabajar con adaptadores compatibles con:
+
+```text
+OBD-II
+   │
+   ▼
+ELM327
+   │
+   ├── Bluetooth
+   │
+   └── Wi-Fi
+          │
+          ▼
+     DC-ELM327
+          │
+          ▼
+         ECU
+<div align="center">
+
+# 🚗 DC-ELM327
+
+[![Get it on F-Droid](https://f-droid.org/badge/get-it-on.png)](https://f-droid.org/packages/com.fr3ts0n.ecu.gui.com/)
+[![License](https://img.shields.io/badge/license-GPLv3-blue.svg)](LICENSE)
+[![Platform](https://img.shields.io/badge/platform-Android-green.svg)](https://www.com)
+
+**DC-ELM327** es una potente aplicación de diagnóstico vehicular OBD2 para dispositivos Android. Conéctate a la computadora de tu auto en tiempo real, lee y borra códigos de falla, y monitorea cada detalle del rendimiento de tu motor de manera fácil y profesional.
+
+---
+
+![Vehículos en la playa](1000026289.png)
+
+</div>
+
+---
+
+## ✨ Características Principales
+
+### 🔌 Tipos de Conexión
+* **Bluetooth** (Classic y LE)
+* **USB** (Adaptadores seriales / FTDI)
+* **Wi-Fi** (Redes OBD ELM327 inalámbricas)
+
+### 🛠️ Funcionalidad Esencial
+* 🔍 **Lectura de códigos de falla:** Identifica por qué se encendió el testigo "Check Engine".
+* 🧹 **Borrado de códigos de falla:** Limpia los códigos DTC y apaga la luz del motor una vez reparado el problema.
+* 📊 **Lectura y grabación de datos en tiempo real:** Monitoreo en vivo de sensores del vehículo.
+* ❄️ **Cuadro congelado (Freeze Frame):** Analiza las condiciones exactas del vehículo en el momento en que ocurrió una falla.
+* 📋 **Información del vehículo:** Obtén número VIN, calibraciones y datos de la ECU.
+
+<details>
+  <summary><b>🔥 Ampliar lista de características avanzadas</b></summary>
+  
+#### 🎨 Personalización y Visualización
+* Vista Día / Noche automática o manual.
+* Gráficos de datos avanzados y dinámicos.
+* Panel personalizable (Tablero / Dashboard).
+* Pantalla frontal (HUD - Head Up Display) para el parabrisas.
+* Guardar y cargar sesiones grabadas para análisis detallados posteriores.
+* Exportación de datos en formato **CSV**.
+
+#### ⚙️ Personalización de Datos PID
+* Selección de elementos de datos PID personalizados.
+* Conversiones de unidades y fórmulas de datos.
+
+#### 🔌 Soporte de Extensiones y Plugins
+* **Desarrollo:** [Repositorio del plugin DC-ELM327](https://github.com/fr3ts0n/AndrOBD-Plugin)
+* **Plugins Disponibles:**
+  * [MQTT publisher](https://f-droid.org/en/packages/com.fr3ts0n.androbd.plugin.mqtt/) - Publica datos OBD directamente a un broker MQTT.
+  * [GpsProvider](https://f-droid.org/en/packages/com.fr3ts0n.Dc-elm327.plugin.gpsprovider/) - Proporciona datos GPS sincronizados.
+  * [SensorProvider](https://f-droid.org/en/packages/com.fr3ts0n.DCELM327.plugin.sensorprovider/) - Integra datos del acelerómetro del teléfono.
+
+#### 🌍 Soporte de Idioma Nativo
+* Traducible e interactivo vía [weblate.org](https://hosted.weblate.org/engage/androbd/)
+  * Diálogos del programa y configuración.
+  * Descripciones detalladas de datos OBD.
+  * Base de datos de descripciones de códigos de falla.
+
+</details>
+
+---
+
+## 📸 Vistazo Rápido a la App
+
+| Dashboard Principal | Gráficos y Diagnóstico |
+| :--: | :--: |
+| ![Dashboard](watermarked_img_8268063300938201679.png) | ![Gráficos](watermarked_img_14262094370467484248.png) |
+
+---
+
+## 📥 Descarga e Instalación
+
+Puedes descargar la aplicación directamente desde F-Droid:
 
 [<img src="https://f-droid.org/badge/get-it-on.png" alt="Get it on F-Droid" height="80">](https://f-droid.org/packages/com.fr3ts0n.ecu.gui.androbd/)
 
-##  Features
 
-#### Connection types
-* Bluetooth
-* USB
-* Wi-Fi
-
-#### Functionality
-
-* Read fault codes
-* Clear fault codes
-* Read/record live data
-* Read freeze frame data
-* Read vehicle info data
-
+<img src="https://f-droid.org/badge/get-it-on.png" alt="Get it on F-Droid" height="80">
+Características
+Tipos de conexión
+Bluetooth
+USB
+Wi-Fi
+Funcionalidad
+Leer códigos de falla
+Borrar códigos de falla
+Leer/grabar datos en tiempo real
+Leer datos de cuadro congelado (freeze frame)
+Leer datos de información del vehículo
 <details>
-  <summary>Expand features list</summary>
-  
-#### Additional features
-
-* Day/Night view
-* Data charts
-* Dashboard
-* Head up display
-* Save recorded data
-* Load recorded data (for analysis)
-* CSV export
-
-#### Customisation of PID data
-
-* PID data items
-* Data conversions
-
-#### Plugin extension support
-
-* Development: [AndrOBD-Plugin repository](https://github.com/fr3ts0n/AndrOBD-Plugin)
-* Available Plugins:
-  * [MQTT publisher](https://f-droid.org/en/packages/com.fr3ts0n.androbd.plugin.mqtt/) - Publish OBD data to MQTT broker
-  * [GpsProvider](https://f-droid.org/en/packages/com.fr3ts0n.androbd.plugin.gpsprovider/) - Provide GPS data to AndrOBD
-  * [SensorProvider](https://f-droid.org/en/packages/com.fr3ts0n.androbd.plugin.sensorprovider/) - Provide Accelerometer data to AndrOBD
-
-#### Native language support
- 
-* translatable via [weblate.org](https://hosted.weblate.org/engage/androbd/)
-  * [Program dialogs](https://hosted.weblate.org/projects/androbd/strings/)
-  * [OBD data descriptions](https://hosted.weblate.org/projects/androbd/obd-data-descriptions/)
-  * [Fault code descriptions](https://hosted.weblate.org/projects/androbd/fault-codes/)
-
+<summary>Ampliar lista de características</summary>
+Características adicionales
+Vista Día/Noche
+Gráficos de datos
+Panel (Tablero)
+Pantalla frontal (HUD)
+Guardar datos grabados
+Cargar datos grabados (para análisis)
+Exportar a CSV
+Personalización de datos PID
+Elementos de datos PID
+Conversiones de datos
+Soporte de extensiones de complementos
+Desarrollo: Repositorio del plugin DC-ELM327
+Plugins disponibles:
+MQTT publisher - Publicar datos OBD a un broker MQTT
+GpsProvider - Proporcionar datos GPS a DC-ELM327
+SensorProvider - Proporcionar datos del acelerómetro a DC-ELM327
+Soporte de idioma nativo
+Traducible a través de weblate.org
+Diálogos del programa
+Descripciones de datos OBD
+Descripciones de códigos de falla
 </details>
-
-## Screenshots
-
-| Functions | OBD data | Dashboard |
-| :--: | :--: | :--: |
-| ![Screenshot of functions](/fastlane/metadata/android/en-US/images/phoneScreenshots/Screenshot_02.png) | ![Screenshot of OBD data](/fastlane/metadata/android/en-US/images/phoneScreenshots/Screenshot_06.png) | ![Screenshot of Dashboard](/fastlane/metadata/android/en-US/images/phoneScreenshots/Screenshot_09.png) |
-
-*More screenshots available on [the Website](https://fr3ts0n.github.io/AndrOBD/) or in the [Screenshots folder](https://github.com/fr3ts0n/AndrOBD/tree/master/fastlane/metadata/android/en-US/images/phoneScreenshots)*
-
-## Contribute
-  * Report issues in the [issue tracker](https://github.com/fr3ts0n/AndrOBD/issues)
-  * Create a [Pull Request](https://docs.github.com/en/pull-requests)
-  * Test the app with different devices, alpha & beta releases are posted in the Telegram [AndrOBD release channel](https://t.me/AndrOBD_dev)
-  * Contribute to development of plugin extensions: [AndrOBD-Plugin repository](https://github.com/fr3ts0n/AndrOBD-Plugin)
-  * Discuss the project in the [Telegram](https://t.me/joinchat/G60ltQv5CCEQ94BZ5yWQbg) or [Matrix](https://matrix.to/#/#AndrOBD:matrix.org) chat rooms
-  * Translate this app into more languages on [Weblate](https://hosted.weblate.org/engage/androbd/), or have a look at [Language translation](https://github.com/fr3ts0n/AndrOBD/wiki/Language-translation) section in the Wiki for more info.
-
-<details>
-  <summary>Expand translation status</summary>
-
-#### App dialogs:
-
-[![App strings](https://hosted.weblate.org/widgets/androbd/-/strings/multi-auto.svg)](https://hosted.weblate.org/projects/androbd/strings/)
-
-#### OBD data descriptions:
-
-[![OBD data descriptions](https://hosted.weblate.org/widgets/androbd/-/obd-data-descriptions/multi-auto.svg)](https://hosted.weblate.org/projects/androbd/obd-data-descriptions/)
-
-#### Fault codes:
-
-[![Fault codes](https://hosted.weblate.org/widgets/androbd/-/fault-codes/multi-auto.svg)](https://hosted.weblate.org/projects/androbd/fault-codes/)
-
-#### Plugin framework:
-
-[![Plugin framework](https://hosted.weblate.org/widgets/androbd/-/androbd-plugin-framework/multi-auto.svg)](https://hosted.weblate.org/projects/androbd/androbd-plugin-framework/)
-
-</details>
- 
-#### ⚠️ Design request ⚠️
-* AndrOBD is looking for help with designing and implementing of a new modern GUI ([#104](https://github.com/fr3ts0n/AndrOBD/issues/104), [#126](https://github.com/fr3ts0n/AndrOBD/issues/126)), *Java & Kotlin [can be used](https://github.com/fr3ts0n/AndrOBD/wiki/Frequently-asked-questions#what-programming-languages-can-be-used-for-contributions)*. Contributers will be credited/linked in the Readme.
-
-## Support by donating
-
-Buy us a coffee or donate in the amount that you see valuable for the project, as it will enable us to put more free time into the active development.
-
-<table>
-  <tr>
-    <th colspan="3">Thank you for donating</th>
-  </tr>
-  <tr>
-    <td align="center"><a href="https://www.paypal.me/fr3ts0n"><img src="/manual/paypal-donate-icon.png" height=25/></a></td>
-    <td align="center">PayPal</td>
-    <td><a href="https://www.paypal.me/fr3ts0n">https://www.paypal.me/fr3ts0n</a></td>
-  </tr>
-  <tr>
-    <td align="center">
-      <a href="https://liberapay.com/AndrOBD/donate/"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a>
-    </td>
-    <td align="center">Liberapay</td>
-    <td>
-      <a href="https://liberapay.com/AndrOBD/donate/">https://liberapay.com/AndrOBD/donate</a>
-    </td>
-  </tr>
-  <tr>
-    <td align="center"><a href="bitcoin:19UApzsc5eDJ5VNDNYCA1bpszPnkcpWeFP"><img src="/manual/bitcoin_qr_code.png" alt="bitcoin:19UApzsc5eDJ5VNDNYCA1bpszPnkcpWeFP" width="128px" height="128px"></a></td>
-    <td align="center">Bitcoin</a></td>
-    <td><a href="bitcoin:19UApzsc5eDJ5VNDNYCA1bpszPnkcpWeFP">19UApzsc5eDJ5VNDNYCA1bpszPnkcpWeFP</a></td>
-  </tr>
-</table>
-
-#### Credits
-<details>
-  <summary>Donators</summary>
-&nbsp;
-  
-| Date    | Supporter              | Donation |
-|---------|------------------------|---------:|
-| 2018/02 | John Zimmerer          |      $10 |
-| 2018/12 | Martin Bourdoiseau     |      €20 |
-| 2019/06 | Jeffrey O'Connell      |      $10 |
-| 2019/08 | Christoph Schmid       |      €10 |
-| 2020/01 | Glenn Fowler           |       $5 |
-| 2020/02 | Klemen Skerbiš         |       €5 |
-| 2020/06 | Jairus Martin          |      $10 |
-| 2020/06 | rusefi llc             |      €25 |
-| 2020/07 | Klemen Skerbiš         |       €5 |
-| 2020/10 | Frank White            |       $8 |
-| 2021/03 | Raphael Högger         |    CHF60 |
-| 2021/04 | Klemen Skerbiš         |       €5 |
-| 2021/06 | Christoph Goetz        |       €5 |
-| 2021/11 | Raphael Högger         |    CHF60 |
-| 2022/05 | Cecil Harper           |       €6 |
-| 2022/07 | Daniel Singh           |      $10 |
-| 2022/09 | Andrew Hofmans         |       €5 |
-| 2022/11 | Glenn Fowler           |       $5 |
-| 2023/01 | Remy Piper             |      €10 |
-| 2023/03 | Hausmeister0815        |      $60 |
-| 2023/07 | Christian Böttcher     |      €10 |
-| 2023/11 | @user8446              |      $10 |
-| 2024/01 | Hausmeister0815        |      €50 |
-| 2024/04 | @BaderSZ               |       $5 |
-| 2024/05 | Raphael Högger         |    CHF52 |
-| 2024/11 | @user8446              |      $10 |
-| 2025/05 | Klemen Skerbiš         |      $20 |
-| 2025/12 | @user8446              |      $10 |
-| 2026/01 | Raphael Kröpfli-Högger |    CHF30 |
-
-</details>
-
-<details>
-  <summary>Contributors</summary>
-  
-#### Graphic design
-
-* Very special Thanks to [anaufalm](https://github.com/anaufalm) for the [beautiful graphic design artwork and logos](https://steemit.com/utopian-io/@naufal/my-design-logo-for-androbd-valid-commit-and-added-to-v2-0-3).
-
-#### Start page
-
-* Thank you very much [sampoder](https://github.com/sampoder/) for a beautiful [AndrOBD start page](https://fr3ts0n.github.io/AndrOBD/).
-
-#### Internet promotion
-
-* Big hands to [aha999](https://github.com/aha999/) for a fancier Readme, community help and many ideas to improve AndrOBD.
-
-#### Hosting translations
-
-* Special thanks to [Michal Čihař](https://github.com/nijel) for hosting translations on [weblate.org](http://weblate.org/).
-</details>
-
-*Thanks to the open source community and any supporters who pick this project up, AndrOBD will be able to get more development, new features, and hopefully even more than that.*
+Capturas de pantalla
