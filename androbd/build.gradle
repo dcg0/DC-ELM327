@@ -10,7 +10,7 @@ android {
     }
 
     defaultConfig {
-        minSdkVersion 17
+        minSdkVersion 21
         targetSdkVersion 36
         versionCode 20710
         versionName 'V2.7.10'
