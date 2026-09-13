@@ -1,4 +1,60 @@
+# 🚗 DC-ELM327
 
+<p align="center">
+  <img src="https://github.com/dcg0/DC-ELM327/raw/refs/heads/main/readme.png" alt="DC-ELM327" width="100%">
+</p>
+
+<h2 align="center">Sistema de diagnóstico automotriz OBD-II</h2>
+
+<p align="center">
+  Diagnóstico y monitoreo de parámetros del vehículo mediante un módulo <b>ELM327</b>.
+</p>
+
+---
+
+## 📋 Descripción
+
+**DC-ELM327** es una aplicación orientada al diagnóstico y monitoreo automotriz utilizando el protocolo **OBD-II** y módulos compatibles con **ELM327**.
+
+La aplicación permite establecer comunicación con la ECU del vehículo y visualizar información del automóvil mediante una interfaz tipo tablero.
+
+---
+
+## 🔧 Características
+
+- Conexión con módulos **ELM327**.
+- Comunicación mediante **OBD-II**.
+- Lectura de parámetros de la ECU.
+- Monitoreo de datos en tiempo real.
+- Visualización de RPM.
+- Velocidad del vehículo.
+- Temperatura del motor.
+- Nivel de combustible.
+- Lectura de información de diagnóstico.
+- Interfaz gráfica tipo tablero automotriz.
+- Diseño orientado al diagnóstico y monitoreo.
+
+---
+
+## 📡 Comunicación
+
+DC-ELM327 está diseñado para trabajar con adaptadores compatibles con:
+
+```text
+OBD-II
+   │
+   ▼
+ELM327
+   │
+   ├── Bluetooth
+   │
+   └── Wi-Fi
+          │
+          ▼
+     DC-ELM327
+          │
+          ▼
+         ECU
 <div align="center">
 
 # 🚗 DC-ELM327
