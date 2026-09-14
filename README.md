@@ -88,14 +88,3 @@ It is open source and completely free. The application also has a built in Demo 
 
 
 | 
-#### Graphic design
-
-* Very special Thanks to [anaufalm](https://github.com/anaufalm) for the [beautiful graphic design artwork and logos](https://steemit.com/utopian-io/@naufal/my-design-logo-for-androbd-valid-commit-and-added-to-v2-0-3).
-
-#### Start page
-
-* Thank you very much [sampoder](https://github.com/sampoder/) for a beautiful [AndrOBD start page](https://fr3ts0n.github.io/AndrOBD/).
-
-#### Internet promotion
-
-* 
