@@ -1,0 +1,51 @@
+name: Android Build CI
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up JDK 17
+      uses: actions/setup-java@v4
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+        cache: gradle
+
+    - name: Make gradlew executable
+      run: chmod +x gradlew
+
+    - name: Build with Gradle (Library)
+      run: ./gradlew library:build
+
+    - name: Build with Gradle (Plugin)
+      run: ./gradlew plugin:build
+
+    - name: Validate Android Build
+      run: ./gradlew androbd:lint
+
+    - name: Compile Android APK
+      run: ./gradlew androbd:assembleDebug
+
+    - name: Upload APK artifact
+      uses: actions/upload-artifact@v4
+      if: success()
+      with:
+        name: androbd-debug-apk
+        path: androbd/build/outputs/apk/debug/androbd-debug.apk
+        retention-days: 30
+
+    - name: Build Report on Failure
+      if: failure()
+      run: |
+        echo \"❌ Build failed! Check the logs above for details.\"
+        exit 1
