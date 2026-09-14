@@ -87,76 +87,7 @@ It is open source and completely free. The application also has a built in Demo 
 #### Plugin framework:
 
 
-
-Buy us a coffee or donate in the amount that you see valuable for the project, as it will enable us to put more free time into the active development.
-
-<table>
-  <tr>
-    <th colspan="3">Thank you for donating</th>
-  </tr>
-  <tr>
-    <td align="center"><a href="https://www.paypal.me/fr3ts0n"><img src="/manual/paypal-donate-icon.png" height=25/></a></td>
-    <td align="center">PayPal</td>
-    <td><a href="https://www.paypal.me/fr3ts0n">https://www.paypal.me/fr3ts0n</a></td>
-  </tr>
-  <tr>
-    <td align="center">
-      <a href="https://liberapay.com/AndrOBD/donate/"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a>
-    </td>
-    <td align="center">Liberapay</td>
-    <td>
-      <a href="https://liberapay.com/AndrOBD/donate/">https://liberapay.com/AndrOBD/donate</a>
-    </td>
-  </tr>
-  <tr>
-    <td align="center"><a href="bitcoin:19UApzsc5eDJ5VNDNYCA1bpszPnkcpWeFP"><img src="/manual/bitcoin_qr_code.png" alt="bitcoin:19UApzsc5eDJ5VNDNYCA1bpszPnkcpWeFP" width="128px" height="128px"></a></td>
-    <td align="center">Bitcoin</a></td>
-    <td><a href="bitcoin:19UApzsc5eDJ5VNDNYCA1bpszPnkcpWeFP">19UApzsc5eDJ5VNDNYCA1bpszPnkcpWeFP</a></td>
-  </tr>
-</table>
-
-#### Credits
-<details>
-  <summary>Donators</summary>
-&nbsp;
-  
-| Date    | Supporter              | Donation |
-|---------|------------------------|---------:|
-| 2018/02 | John Zimmerer          |      $10 |
-| 2018/12 | Martin Bourdoiseau     |      €20 |
-| 2019/06 | Jeffrey O'Connell      |      $10 |
-| 2019/08 | Christoph Schmid       |      €10 |
-| 2020/01 | Glenn Fowler           |       $5 |
-| 2020/02 | Klemen Skerbiš         |       €5 |
-| 2020/06 | Jairus Martin          |      $10 |
-| 2020/06 | rusefi llc             |      €25 |
-| 2020/07 | Klemen Skerbiš         |       €5 |
-| 2020/10 | Frank White            |       $8 |
-| 2021/03 | Raphael Högger         |    CHF60 |
-| 2021/04 | Klemen Skerbiš         |       €5 |
-| 2021/06 | Christoph Goetz        |       €5 |
-| 2021/11 | Raphael Högger         |    CHF60 |
-| 2022/05 | Cecil Harper           |       €6 |
-| 2022/07 | Daniel Singh           |      $10 |
-| 2022/09 | Andrew Hofmans         |       €5 |
-| 2022/11 | Glenn Fowler           |       $5 |
-| 2023/01 | Remy Piper             |      €10 |
-| 2023/03 | Hausmeister0815        |      $60 |
-| 2023/07 | Christian Böttcher     |      €10 |
-| 2023/11 | @user8446              |      $10 |
-| 2024/01 | Hausmeister0815        |      €50 |
-| 2024/04 | @BaderSZ               |       $5 |
-| 2024/05 | Raphael Högger         |    CHF52 |
-| 2024/11 | @user8446              |      $10 |
-| 2025/05 | Klemen Skerbiš         |      $20 |
-| 2025/12 | @user8446              |      $10 |
-| 2026/01 | Raphael Kröpfli-Högger |    CHF30 |
-
-</details>
-
-<details>
-  <summary>Contributors</summary>
-  
+| 
 #### Graphic design
 
 * Very special Thanks to [anaufalm](https://github.com/anaufalm) for the [beautiful graphic design artwork and logos](https://steemit.com/utopian-io/@naufal/my-design-logo-for-androbd-valid-commit-and-added-to-v2-0-3).
@@ -167,11 +98,4 @@ Buy us a coffee or donate in the amount that you see valuable for the project, a
 
 #### Internet promotion
 
-* Big hands to [aha999](https://github.com/aha999/) for a fancier Readme, community help and many ideas to improve AndrOBD.
-
-#### Hosting translations
-
-* Special thanks to [Michal Čihař](https://github.com/nijel) for hosting translations on [weblate.org](http://weblate.org/).
-</details>
-
-*Thanks to the open source community and any supporters who pick this project up, AndrOBD will be able to get more development, new features, and hopefully even more than that.*
+* 
