@@ -1,0 +1,32 @@
+apply plugin: 'com.android.library'
+
+android {
+    namespace = "com.fr3ts0n.androbd.plugin"
+    compileSdk 36
+
+    buildFeatures {
+        resValues = true
+        buildConfig = true
+    }
+
+    defaultConfig {
+        minSdkVersion 17
+        targetSdkVersion 36
+        versionCode = 10202
+        versionName = 'V1.2.2'
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        resValue "string", "app_version", versionName
+    }
+
+    lint {
+        // Existing findings are grandfathered into this baseline rather than fixed
+        // individually -- fixing them is real, separate effort. New lint issues not
+        // in the baseline still fail the build.
+        baseline = file("lint-baseline.xml")
+    }
+}
+dependencies {
+    implementation 'androidx.core:core:1.12.0'
+}

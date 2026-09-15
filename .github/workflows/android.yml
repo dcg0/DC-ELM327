@@ -1,0 +1,44 @@
+name: Android CI
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Test and build APK
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+          cache: gradle
+
+      - name: Make Gradle wrapper executable
+        run: chmod +x gradlew
+
+      - name: Run unit tests
+        run: ./gradlew test --no-daemon --stacktrace
+
+      - name: Build debug APK
+        run: ./gradlew assembleDebug --no-daemon --stacktrace
+
+      - name: Upload debug APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: DC-ELM327-debug-apk
+          path: androbd/build/outputs/apk/debug/androbd-debug.apk
+          if-no-files-found: error

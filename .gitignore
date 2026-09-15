@@ -1,0 +1,29 @@
+# Gradle and Android build output
+**/build/
+**/.gradle/
+.gradle/
+
+# Android Studio / IntelliJ
+**/.idea/
+**/*.iml
+**/.vscode/
+
+# Local machine configuration
+local.properties
+
+# Generated and temporary files
+**/bin/
+**/gen/
+**/doc/
+**/javadoc/
+*~
+*.log
+
+# Build artifacts and downloaded distributions
+*.apk
+*.aab
+gradle-*-bin.zip
+
+# OS files
+.DS_Store
+Thumbs.db
