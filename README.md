@@ -44,6 +44,12 @@ La APK de depuración se genera en:
 androbd/build/outputs/apk/debug/androbd-debug.apk
 ```
 
+## Descargar APK
+
+La versión de prueba más reciente está disponible en [GitHub Releases](https://github.com/dcg0/DC-ELM327/releases/latest). También puedes descargar directamente la APK debug desde [DC-ELM327-debug.apk](https://github.com/dcg0/DC-ELM327/releases/download/v2.7.10-debug/DC-ELM327-debug.apk).
+
+> Esta APK está firmada con la clave debug y es para pruebas. Para publicar una versión de producción o subirla a Google Play, genera y protege una clave release propia.
+
 En Windows:
 
 ```bat
