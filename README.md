@@ -1,77 +1,83 @@
-![HC-ELM327 / DC-ELM327](logo/web_hi_res_1280x800.png)
+<div align="center">
 
-# DC-ELM327
+![DC-ELM327](logonoche.png)
 
-**DC-ELM327** es una aplicación Android de diagnóstico OBD-II basada en AndrOBD. Permite conectar el teléfono a un adaptador compatible con **ELM327** para leer datos del vehículo, consultar y borrar códigos de avería y visualizar mediciones en tiempo real.
+# 🔌 DC-ELM327
+### Diagnóstico Automotriz OBD-II — En tu celular
 
-La aplicación es software libre e incluye un **modo Demo** para probar la interfaz sin conectar un vehículo.
+![Portada](portadanoche.png)
 
-## Funciones
+> 🚗 Sensores en tiempo real • 📊 Gráficas dinámicas  
+> 🔧 Lectura y borrado de códigos de falla  
+> 📄 Exportación CSV • 📡 Bluetooth / BLE / USB / Wi-Fi
 
-- Conexión por Bluetooth clásico, Bluetooth Low Energy, USB y Wi-Fi/red.
-- Lectura y borrado de códigos de avería (DTC).
-- Datos en vivo, selección de PIDs y gráficas.
-- Vista de tablero, HUD y dashboard WebView en tiempo real.
-- Lectura de información del vehículo, freeze frames y pruebas de control compatibles.
-- Guardado/carga de mediciones y exportación CSV.
-- Modo Demo para pruebas sin adaptador.
-- Configuración de unidades, modo día/noche, pantalla completa y preferencias de comunicación.
-- Soporte para plugins AndrOBD.
-- Interfaz traducida a múltiples idiomas.
+---
 
-> La comunicación real depende de un adaptador ELM327 compatible y de los permisos de Bluetooth/USB/red del dispositivo Android. El modo Demo permite validar la aplicación sin hardware.
+## ⬇️ Descargar APK — Última Versión
 
-## Requisitos de compilación
+### 📥 v2.7.10-debug
+**[⬇️ DC-ELM327-debug.apk](https://github.com/dcg0/DC-ELM327/releases/download/v2.7.10-debug/DC-ELM327-debug.apk)**
 
-- JDK 17 completo, incluido `javac`.
-- Android SDK Platform 36 y Build Tools 36.0.0.
-- Gradle Wrapper incluido en el proyecto.
+- 📦 Tamaño: 6.19 MB
+- 📱 Android 9.0 o superior
+- ✅ Firmada para pruebas
+- 🔗 [Ver en Publicaciones / Releases](https://github.com/dcg0/DC-ELM327/releases/latest)
 
-El submódulo `plugin` se integra directamente en el build raíz para que la aplicación compile desde un clon limpio, sin depender de una copia externa del plugin.
+> ⚠️ Esta versión está firmada con clave de depuración. Para producción o Google Play, genera tu propia firma de lanzamiento.
 
-## Compilar la APK
+</div>
 
-En Linux/macOS:
+---
 
+## 📋 ¿Qué es DC-ELM327?
+
+**DC-ELM327** es una aplicación Android que convierte tu celular en un escáner automotriz completo. Al conectar un adaptador **ELM327** al puerto OBD de tu vehículo, obtienes todos los datos de la computadora del auto en tiempo real.
+
+> ✅ Incluye **Modo Demo** — prueba todo sin necesidad de tener el adaptador o el auto conectado.
+
+---
+
+## ✅ Características
+
+- ✅ Conexión por **Bluetooth clásico, BLE, USB y Wi-Fi/red**
+- ✅ Lectura y borrado de códigos de avería (DTC) con descripción
+- ✅ Datos en vivo, selección de PIDs y gráficas dinámicas
+- ✅ Vista de tablero, HUD y dashboard WebView
+- ✅ Información del vehículo, freeze frames y pruebas de control
+- ✅ Guardar/cargar mediciones y **exportar a CSV**
+- ✅ Modo Demo completo
+- ✅ Configuración de unidades, modo día/noche, pantalla completa
+- ✅ Soporte para plugins
+- ✅ Interfaz en varios idiomas
+
+> 💡 La comunicación real depende de un adaptador ELM327 compatible y los permisos de Bluetooth/USB/red del dispositivo.
+
+---
+
+## 📱 Requisitos
+
+- Android 9.0 o superior
+- Adaptador ELM327 compatible (Bluetooth recomendado)
+- Permisos de Bluetooth y Ubicación habilitados
+
+## 🔧 Instalación
+
+1. Descarga `DC-ELM327-debug.apk` desde el enlace de arriba
+2. Permite **instalar aplicaciones de fuentes desconocidas**
+3. Abre la app → elige tu tipo de conexión
+4. Empareja tu módulo ELM327 por Bluetooth → **Conectar** ✅
+5. Sin auto → selecciona **Modo Demo** para probar todo
+
+---
+
+## 🛠️ Para desarrolladores — Compilar desde el código
+
+### Requisitos
+- **JDK 17** (incluye `javac`)
+- **Android SDK Platform 36** + Build Tools 36.0.0
+- Gradle Wrapper incluido
+
+### Comandos
 ```bash
 chmod +x gradlew
 ./gradlew clean test assembleDebug
-```
-
-La APK de depuración se genera en:
-
-```text
-androbd/build/outputs/apk/debug/androbd-debug.apk
-```
-
-## Descargar APK
-
-La versión de prueba más reciente está disponible en [GitHub Releases](https://github.com/dcg0/DC-ELM327/releases/latest). También puedes descargar directamente la APK debug desde [DC-ELM327-debug.apk](https://github.com/dcg0/DC-ELM327/releases/download/v2.7.10-debug/DC-ELM327-debug.apk).
-
-> Esta APK está firmada con la clave debug y es para pruebas. Para publicar una versión de producción o subirla a Google Play, genera y protege una clave release propia.
-
-En Windows:
-
-```bat
-gradlew.bat clean test assembleDebug
-```
-
-`local.properties` es local a cada equipo y no se debe subir al repositorio. Android Studio puede abrir directamente la carpeta raíz del proyecto.
-
-## Instalar en un dispositivo conectado
-
-Con `adb` disponible y la depuración USB habilitada:
-
-```bash
-adb install -r androbd/build/outputs/apk/debug/androbd-debug.apk
-```
-
-Para probar el modo Demo, abre la aplicación y selecciona el modo de demostración desde la pantalla inicial o las opciones de conexión. Para una conexión real, concede los permisos solicitados y selecciona el medio Bluetooth, BLE, USB o red correspondiente.
-
-## Integración continua
-
-GitHub Actions ejecuta automáticamente `test` y `assembleDebug` en cada push y pull request. También se puede iniciar manualmente desde la pestaña **Actions**. El workflow publica la APK de depuración como artefacto descargable.
-
-## Licencia
-
-Consulta [LICENSE](LICENSE). El proyecto conserva la licencia y atribuciones de sus componentes originales.
