@@ -11,7 +11,7 @@ permissions:
 
 jobs:
   build:
-    name: Test and build APK
+    name: Test and build release APK
     runs-on: ubuntu-latest
 
     steps:
@@ -33,12 +33,12 @@ jobs:
       - name: Run unit tests
         run: ./gradlew test --no-daemon --stacktrace
 
-      - name: Build debug APK
-        run: ./gradlew assembleDebug --no-daemon --stacktrace
+      - name: Build release APK
+        run: ./gradlew :androbd:assembleRelease --no-daemon --stacktrace
 
-      - name: Upload debug APK
+      - name: Upload release APK
         uses: actions/upload-artifact@v4
         with:
-          name: DC-ELM327-debug-apk
-          path: androbd/build/outputs/apk/debug/androbd-debug.apk
+          name: DC-ELM327-release-apk
+          path: androbd/build/outputs/apk/release/androbd-release-unsigned.apk
           if-no-files-found: error
