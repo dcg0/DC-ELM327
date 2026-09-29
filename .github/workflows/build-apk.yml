@@ -1,4 +1,4 @@
-name: DC-ELM327 — Release
+name: DCcecuelm327 — Release
 on: push
 
 jobs:
@@ -18,5 +18,5 @@ jobs:
           ./gradlew assembleRelease
       - uses: actions/upload-artifact@v4
         with:
-          name: DC-ELM327-Release
-          path: app/build/outputs/apk/release/app-release.apk
+          name: DCcecuelm327-Release
+          path: androbd/build/outputs/apk/release/androbd-release.apk
